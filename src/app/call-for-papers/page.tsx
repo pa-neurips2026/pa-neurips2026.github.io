@@ -9,11 +9,7 @@ export default function CallForPapersPage() {
   return (
     <div className="site-container py-12 md:py-16">
       <header className="mb-12">
-        <h1 className="text-display-md text-neutral-900 mb-3">Call for Papers</h1>
-        <p className="text-base text-neutral-700 leading-relaxed">
-          We invite submissions to {workshop.shortName}, on evaluating and
-          building language models that help humans flourish.
-        </p>
+        <h1 className="text-display-md text-neutral-900">Call for Papers</h1>
       </header>
 
       {/* OpenReview button */}

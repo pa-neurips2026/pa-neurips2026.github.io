@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Avatar from '@/components/Avatar';
 import {
   workshop,
-  keynoteSpeakers,
   organizers,
 } from '@/lib/data';
 
@@ -34,7 +33,6 @@ export default function HomePage() {
             {workshop.date}
           </span>
         </div>
-        <p className="text-xs font-ui text-neutral-400">{workshop.venueNote}</p>
       </section>
 
       {/* Abstract */}
@@ -83,28 +81,11 @@ export default function HomePage() {
             Full schedule →
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {keynoteSpeakers.map((speaker) => (
-            <div key={speaker.name} className="flex flex-col items-center text-center">
-              <Avatar name={speaker.name} src={speaker.photo} size={96} className="rounded-full" />
-              <h3 className="font-bold text-neutral-900 mt-3">{speaker.name}</h3>
-              <p className="text-sm text-neutral-500">{speaker.affiliation}</p>
-              {speaker.confirmed ? (
-                <span className="font-ui text-[0.625rem] font-semibold uppercase tracking-wide text-primary-700 mt-1">
-                  Confirmed
-                </span>
-              ) : (
-                <span className="font-ui text-[0.625rem] font-semibold uppercase tracking-wide text-neutral-400 mt-1">
-                  Tentative
-                </span>
-              )}
-            </div>
-          ))}
+        <div className="bg-neutral-100 p-8 text-center">
+          <p className="text-sm text-neutral-500">
+            Invited speakers will be announced soon.
+          </p>
         </div>
-        <p className="text-xs font-ui text-neutral-400 mt-4">
-          Invited speakers are tentative; this list will be updated as
-          invitations are confirmed.
-        </p>
       </section>
 
       {/* Organizers teaser */}
@@ -150,8 +131,8 @@ export default function HomePage() {
               </h3>
             </div>
             <p className="text-sm text-neutral-600 leading-relaxed flex-1">
-              Submit extended abstracts and short papers — including position
-              papers — on evaluating and building models that help humans
+              Submit extended abstracts and short papers (including position
+              papers) on evaluating and building models that help humans
               flourish. Double-blind, non-archival.
             </p>
             <span className="font-ui text-sm font-medium text-primary-600 group-hover:text-primary-700 mt-4 inline-flex items-center gap-1">

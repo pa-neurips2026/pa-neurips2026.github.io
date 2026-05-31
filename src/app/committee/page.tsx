@@ -10,12 +10,7 @@ export default function CommitteePage() {
   return (
     <div className="site-container py-12 md:py-16">
       <header className="mb-12">
-        <h1 className="text-display-md text-neutral-900 mb-3">Committee</h1>
-        <p className="text-base text-neutral-700 leading-relaxed">
-          The workshop is led by an organizing team spanning academia and
-          industry, supported by a program committee of reviewers drawn from
-          machine learning and adjacent fields.
-        </p>
+        <h1 className="text-display-md text-neutral-900">Committee</h1>
       </header>
 
       {/* Organizing Committee */}

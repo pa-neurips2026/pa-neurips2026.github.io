@@ -11,25 +11,23 @@ export const workshop = {
   // Placeholders — update once NeurIPS 2026 confirms the program.
   location: 'NeurIPS 2026 — Location TBA',
   date: 'December 2026 — Date & Time TBA',
-  venueNote: 'In-person, one-day workshop · Co-located with NeurIPS 2026',
   tagline:
     'A NeurIPS workshop on positive alignment — evaluating and building language models that help people through life’s hardest moments, support long-term goals, and strengthen rather than erode human agency.',
   openReviewUrl: '#', // Not live yet.
   abstract: [
-    'The dominant paradigm in language model (LM) alignment has focused on safety: teaching models to avoid harmful outputs. Yet a growing and underserved challenge lies in positive alignment: the capacity of models to be helpful when humans (i) face the most consequential situations in their lives (e.g., navigating conflict, processing grief, making major career decisions, or working through moral dilemmas with no easy answer) or (ii) pursue long-term goals (e.g., building lasting habits, learning a difficult skill over months, or steadily working toward a degree or career), all while (iii) retaining agency and independence (forming independent judgments, building skills rather than outsourcing them, and knowing when to seek other people rather than AI support). Current models tend to fail across all three: they retreat into refusals or platitudes when situations get hard, optimize for a single helpful-sounding turn rather than a person’s longer trajectory, and foster dependence by flattering users instead of strengthening their own judgment.',
-    'The field lacks a shared foundation, language, and evaluation methodology for this line of work. Existing benchmarks emphasize reasoning, accuracy, safety, or cultural robustness, but none directly measure whether a model can engage with wisdom, empathy, and genuine support for human autonomy when users bring difficult, ambiguous life questions to the fore. Closing this gap requires advances in preference learning, reward modeling, and post-training methods — and, crucially, in how we elicit human preferences about flourishing, a task fundamentally harder than identifying harms and one that goes beyond current social-choice aggregation methods.',
-    'Several groups are already working independently on related problems — pluralistic alignment, LLM coaching, moral-reasoning evaluation, and wellbeing-oriented benchmarking — but no dedicated venue connects them. This workshop creates that space by inviting voices from diverse AI research communities as well as adjacent fields (positive psychology, social work, philosophy of wellbeing, and HCI) whose perspectives are essential to shaping this direction.',
+    'Language model alignment has focused largely on safety — teaching models to avoid harmful outputs. Positive alignment asks a complementary question: can models genuinely help when people face their most consequential moments (navigating conflict, processing grief, making major decisions), pursue long-term goals, and do so while retaining their own agency and judgment? Today’s models often fall short — retreating into refusals or platitudes, optimizing for a single helpful-sounding turn, and fostering dependence rather than strengthening users’ own judgment.',
+    'The field lacks shared language and evaluation methods for this work. This workshop brings together researchers across AI alignment and adjacent fields — positive psychology, social work, philosophy of wellbeing, and HCI — to build a foundation for evaluating and building models that help humans flourish.',
   ],
   pillars: [
     {
       title: 'Helping in consequential moments',
       body:
-        'Being genuinely useful when people face the hardest situations in their lives — navigating conflict, processing grief, making major decisions, or working through moral dilemmas with no easy answer — rather than retreating into refusals or platitudes when situations get hard.',
+        'Being genuinely useful when people face the hardest situations in their lives: e.g., navigating conflict, processing grief, making major decisions, or working through moral dilemmas with no easy answer.',
     },
     {
       title: 'Supporting long-term goals',
       body:
-        'Optimizing for a person’s longer trajectory — building lasting habits, learning a difficult skill over months, steadily working toward a degree or career — instead of a single helpful-sounding turn taken in isolation.',
+        'Optimizing for a person’s longer trajectory (e.g., building lasting habits, learning a difficult skill over months, steadily working toward a degree or career) instead of a single helpful-sounding turn taken in isolation.',
     },
     {
       title: 'Preserving agency and independence',
@@ -130,7 +128,7 @@ export const organizers: Person[] = [
 // Program Committee is being assembled; names listed once invitations confirm.
 export const programCommittee = {
   description:
-    'We are assembling a Program Committee spanning machine learning and adjacent fields — including positive psychology, social work, philosophy of wellbeing, and human–computer interaction — to review submissions through an anonymized, double-blind process.',
+    'We are assembling a Program Committee spanning machine learning and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and human–computer interaction) to review submissions through an anonymized, double-blind process.',
   note: 'The named Program Committee will be listed here once invitations are confirmed.',
 };
 

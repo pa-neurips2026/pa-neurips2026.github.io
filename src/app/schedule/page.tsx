@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import PersonCard from '@/components/PersonCard';
-import { schedule, keynoteSpeakers } from '@/lib/data';
+import { schedule } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Schedule',
@@ -10,13 +9,7 @@ export default function SchedulePage() {
   return (
     <div className="site-container py-12 md:py-16">
       <header className="mb-12">
-        <h1 className="text-display-md text-neutral-900 mb-3">Schedule</h1>
-        <p className="text-base text-neutral-700 leading-relaxed">
-          A tentative full-day program. The program deliberately limits the
-          number of keynotes in favor of contributed talks, posters, and
-          structured discussion. Talk and accepted-paper titles will be posted
-          here ahead of the event.
-        </p>
+        <h1 className="text-display-md text-neutral-900">Schedule</h1>
       </header>
 
       {/* Schedule */}
@@ -58,10 +51,10 @@ export default function SchedulePage() {
         <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wide mb-6">
           Invited Speakers
         </h2>
-        <div className="grid grid-cols-1 gap-4">
-          {keynoteSpeakers.map((speaker) => (
-            <PersonCard key={speaker.name} person={speaker} />
-          ))}
+        <div className="bg-neutral-100 p-8 text-center">
+          <p className="text-sm text-neutral-500">
+            Invited speakers will be announced soon.
+          </p>
         </div>
       </section>
 

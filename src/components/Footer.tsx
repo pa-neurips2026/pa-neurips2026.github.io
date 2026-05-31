@@ -5,9 +5,7 @@ export default function Footer() {
     <footer className="border-t border-neutral-200 mt-16">
       <div className="site-container py-8">
         <p className="text-neutral-400 text-xs text-center">
-          {workshop.shortName} · {workshop.status}. Details on this site are
-          tentative and subject to change pending acceptance of the workshop
-          proposal.
+          {workshop.shortName}
         </p>
       </div>
     </footer>
