@@ -175,14 +175,16 @@ export const schedule: ScheduleItem[] = [
 
 export const cfp = {
   topics: [
-    'Benchmarks for positive alignment, human flourishing, and value-sensitive LLM behavior',
+    'Benchmarks for positive alignment and human flourishing',
+    'Long-horizon support across many sessions rather than single-turn helpfulness',
+    'Preference learning and reward modeling for flourishing-oriented objectives',
+    'Post-training for ambiguous, high-stakes situations like conflict, grief, and major life decisions',
+    'Sycophancy, learned helplessness, and cognitive dependency',
+    'Human autonomy, coaching, and non-directive assistance',
+    'Eliciting and aggregating preferences about flourishing beyond social-choice aggregation',
     'Pluralistic and multicultural evaluation',
-    'Post-training methods for improving guidance quality in ambiguous situations',
-    'Sycophancy, learned helplessness, and cognitive dependency in LLMs',
-    'Human autonomy, coaching, and non-directive AI assistance',
-    'Annotation methodology for subjective, value-laden datasets',
-    'Cross-disciplinary perspectives — psychology, ethics, social work, philosophy',
-    'Case studies and empirical analyses of LLM behavior in sensitive personal domains',
+    'Cross-disciplinary perspectives from positive psychology, social work, philosophy of wellbeing, ethics, and HCI',
+    'Case studies of LLM behavior in sensitive personal domains',
   ],
   importantDates: [
     { label: 'Submission deadline', value: 'TBA' },
