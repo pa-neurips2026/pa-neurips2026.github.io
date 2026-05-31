@@ -9,13 +9,7 @@ export default function SchedulePage() {
   return (
     <div className="site-container py-12 md:py-16">
       <header className="mb-12">
-        <h1 className="text-display-md text-neutral-900 mb-3">Schedule</h1>
-        <p className="text-base text-neutral-700 leading-relaxed">
-          A tentative full-day program. The program deliberately limits the
-          number of keynotes in favor of contributed talks, posters, and
-          structured discussion. Talk and accepted-paper titles will be posted
-          here ahead of the event.
-        </p>
+        <h1 className="text-display-md text-neutral-900">Schedule</h1>
       </header>
 
       {/* Schedule */}
