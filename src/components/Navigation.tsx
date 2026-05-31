@@ -20,7 +20,7 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-white border-b border-neutral-200">
       <div className="site-container">
         <div className="flex items-center justify-between h-14">
-          {/* Logo / Name + Active Proposal chip */}
+          {/* Logo / Name */}
           <div className="flex items-center gap-2.5 min-w-0">
             <Link
               href="/"
@@ -28,9 +28,6 @@ export default function Navigation() {
             >
               {workshop.shortName}
             </Link>
-            <span className="font-ui text-[0.625rem] font-semibold uppercase tracking-wide bg-swiss-orange/15 text-swiss-orange rounded-full px-2 py-0.5 leading-none whitespace-nowrap">
-              {workshop.status}
-            </span>
           </div>
 
           {/* Desktop Navigation */}
