@@ -15,8 +15,7 @@ export const workshop = {
     'A NeurIPS workshop on positive alignment — evaluating and building language models that help people through life’s hardest moments, support long-term goals, and strengthen rather than erode human agency.',
   openReviewUrl: '#', // Not live yet.
   abstract: [
-    'Language model alignment has focused largely on safety — teaching models to avoid harmful outputs. Positive alignment asks a complementary question: can models genuinely help when people face their most consequential moments (navigating conflict, processing grief, making major decisions), pursue long-term goals, and do so while retaining their own agency and judgment? Today’s models often fall short — retreating into refusals or platitudes, optimizing for a single helpful-sounding turn, and fostering dependence rather than strengthening users’ own judgment.',
-    'The field lacks shared language and evaluation methods for this work. This workshop brings together researchers across AI alignment and adjacent fields — positive psychology, social work, philosophy of wellbeing, and HCI — to build a foundation for evaluating and building models that help humans flourish.',
+    'Language model alignment has focused largely on safety, teaching models to avoid harmful outputs. Positive alignment asks a complementary question: can models genuinely help when people face their most consequential moments (navigating conflict, processing grief, making major decisions), pursue long-term goals, and do so while retaining their own agency and judgment? Today’s models often fall short, retreating into refusals or platitudes, optimizing for a single helpful-sounding turn, and fostering dependence rather than strengthening users’ own judgment. The field lacks shared language and evaluation methods for this work. This workshop brings together researchers across AI alignment and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and HCI) to build a foundation for evaluating and building models that help humans flourish.',
   ],
   pillars: [
     {
@@ -193,6 +192,6 @@ export const cfp = {
   details: [
     'We solicit extended abstracts (up to 4 pages) and short papers (up to 8 pages), including position papers, following the NeurIPS 2026 style template with unlimited references and appendices.',
     'Submissions are non-archival and reviewed through OpenReview via an anonymized, double-blind process.',
-    'We welcome work from diverse AI research communities as well as adjacent fields — positive psychology, social work, philosophy of wellbeing, and HCI — whose perspectives are essential to this direction.',
+    'We welcome work from diverse AI research communities as well as adjacent fields (positive psychology, social work, philosophy of wellbeing, and HCI) whose perspectives are essential to this direction.',
   ],
 };
