@@ -86,7 +86,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {keynoteSpeakers.map((speaker) => (
             <div key={speaker.name} className="flex flex-col items-center text-center">
-              <Avatar name={speaker.name} size={96} className="rounded-full" />
+              <Avatar name={speaker.name} src={speaker.photo} size={96} className="rounded-full" />
               <h3 className="font-bold text-neutral-900 mt-3">{speaker.name}</h3>
               <p className="text-sm text-neutral-500">{speaker.affiliation}</p>
               {speaker.confirmed ? (
@@ -123,7 +123,7 @@ export default function HomePage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6">
           {organizers.map((person) => (
             <div key={person.name} className="flex flex-col items-center text-center">
-              <Avatar name={person.name} size={72} className="rounded-full" />
+              <Avatar name={person.name} src={person.photo} size={72} className="rounded-full" />
               <h3 className="text-sm font-bold text-neutral-900 mt-2.5 leading-tight">
                 {person.name}
               </h3>
