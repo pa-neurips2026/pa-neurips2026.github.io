@@ -22,12 +22,12 @@ export const workshop = {
     {
       title: 'Helping in consequential moments',
       body:
-        'Being genuinely useful when people face the hardest situations in their lives — navigating conflict, processing grief, making major decisions, or working through moral dilemmas with no easy answer — rather than retreating into refusals or platitudes when situations get hard.',
+        'Being genuinely useful when people face the hardest situations in their lives: e.g., navigating conflict, processing grief, making major decisions, or working through moral dilemmas with no easy answer.',
     },
     {
       title: 'Supporting long-term goals',
       body:
-        'Optimizing for a person’s longer trajectory — building lasting habits, learning a difficult skill over months, steadily working toward a degree or career — instead of a single helpful-sounding turn taken in isolation.',
+        'Optimizing for a person’s longer trajectory (e.g., building lasting habits, learning a difficult skill over months, steadily working toward a degree or career) instead of a single helpful-sounding turn taken in isolation.',
     },
     {
       title: 'Preserving agency and independence',
@@ -128,7 +128,7 @@ export const organizers: Person[] = [
 // Program Committee is being assembled; names listed once invitations confirm.
 export const programCommittee = {
   description:
-    'We are assembling a Program Committee spanning machine learning and adjacent fields — including positive psychology, social work, philosophy of wellbeing, and human–computer interaction — to review submissions through an anonymized, double-blind process.',
+    'We are assembling a Program Committee spanning machine learning and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and human–computer interaction) to review submissions through an anonymized, double-blind process.',
   note: 'The named Program Committee will be listed here once invitations are confirmed.',
 };
 

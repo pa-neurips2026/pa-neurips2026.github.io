@@ -149,8 +149,8 @@ export default function HomePage() {
               </h3>
             </div>
             <p className="text-sm text-neutral-600 leading-relaxed flex-1">
-              Submit extended abstracts and short papers — including position
-              papers — on evaluating and building models that help humans
+              Submit extended abstracts and short papers (including position
+              papers) on evaluating and building models that help humans
               flourish. Double-blind, non-archival.
             </p>
             <span className="font-ui text-sm font-medium text-primary-600 group-hover:text-primary-700 mt-4 inline-flex items-center gap-1">
