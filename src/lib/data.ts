@@ -4,7 +4,7 @@
 // =====================================================================
 
 export const workshop = {
-  shortName: 'Positive Alignment @ NeurIPS 2026',
+  shortName: 'PA @ NeurIPS 2026',
   title:
     'Positive Alignment: Evaluating and Building Models That Help Humans Flourish',
   status: 'Active Proposal',
