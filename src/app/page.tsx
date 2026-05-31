@@ -11,7 +11,10 @@ export default function HomePage() {
     <div className="site-container py-12 md:py-16">
       {/* Hero */}
       <section className="mb-16">
-        <h1 className="text-display-md md:text-display-lg text-neutral-900 mb-4">
+        <span className="font-ui text-[0.6875rem] font-semibold uppercase tracking-wide bg-swiss-orange/15 text-swiss-orange rounded-full px-2.5 py-0.5">
+          {workshop.status}
+        </span>
+        <h1 className="text-display-md md:text-display-lg text-neutral-900 mt-4 mb-4">
           {workshop.title}
         </h1>
 
