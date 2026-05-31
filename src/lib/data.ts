@@ -6,7 +6,7 @@
 export const workshop = {
   shortName: 'PA @ NeurIPS 2026',
   title:
-    'Positive Alignment: Evaluating and Building Models That Help Humans Flourish',
+    'Positive Alignment: Building and Evaluating Models That Help Humans Flourish',
   status: 'Active Proposal',
   // Placeholders — update once NeurIPS 2026 confirms the program.
   location: 'NeurIPS 2026 — Location TBA',
@@ -105,6 +105,12 @@ export const organizers: Person[] = [
     bio: 'Research fellow at Stanford working with the Hoover Institution, the Stanford Intelligent Systems Laboratory, and the Stanford Center for AI Safety. His research focuses on robust abstractions of human preferences via mechanistic interpretability, reward modeling, and robust evaluations. PhD from the Technical University of Munich.',
   },
   {
+    name: 'Chloé Bakalar',
+    affiliation: 'OpenAI & UCL',
+    photo: '/images/people/chloe-bakalar.webp',
+    bio: 'AI Ethics Lead and Member of Technical Staff at OpenAI, focused on responsible, ethics-informed AI development and deployment; previously Chief Ethicist at Meta. Her work bridges philosophy and practice across governance and decision-support, and she is a Senior Research Associate at UCL.',
+  },
+  {
     name: 'Arun Rao',
     affiliation: 'Meta Superintelligence Lab',
     photo: '/images/people/arun-rao.jpg',
@@ -115,12 +121,6 @@ export const organizers: Person[] = [
     affiliation: 'Google DeepMind',
     photo: '/images/people/matija-franklin.jpg',
     bio: 'Research Scientist on the Humanity, Ethics and Alignment Research Team (HEART) at Google DeepMind. His research focuses on AI alignment and safety, with particular attention to AI manipulation and influence. PhD from University College London.',
-  },
-  {
-    name: 'Chloé Bakalar',
-    affiliation: 'OpenAI & UCL',
-    photo: '/images/people/chloe-bakalar.webp',
-    bio: 'AI Ethics Lead and Member of Technical Staff at OpenAI, focused on responsible, ethics-informed AI development and deployment; previously Chief Ethicist at Meta. Her work bridges philosophy and practice across governance and decision-support, and she is a Senior Research Associate at UCL.',
   },
 ];
 
