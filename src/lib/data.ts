@@ -193,6 +193,6 @@ export const cfp = {
   details: [
     'We solicit extended abstracts (up to 4 pages) and short papers (up to 8 pages), including position papers, following the NeurIPS 2026 style template with unlimited references and appendices.',
     'Submissions are non-archival and reviewed through OpenReview via an anonymized, double-blind process.',
-    'We welcome work from diverse AI research communities as well as adjacent fields — positive psychology, social work, philosophy of wellbeing, and HCI — whose perspectives are essential to this direction.',
+    'We welcome work from diverse AI research communities as well as adjacent fields (positive psychology, social work, philosophy of wellbeing, and HCI) whose perspectives are essential to this direction.',
   ],
 };
