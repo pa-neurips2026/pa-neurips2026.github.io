@@ -93,6 +93,12 @@ export const organizers: Person[] = [
     bio: 'Student researcher at Stanford University and previously Google DeepMind, focused on building AI systems that are trustworthy, interpretable, and beneficial. Recognized on Forbes 30 Under 30 and co-organizer of the ICCV 2025 and CVPR 2026 workshops on Authenticity & Provenance in the Age of Generative AI.',
   },
   {
+    name: 'Roma Patel',
+    affiliation: 'Google DeepMind',
+    photo: '/images/people/roma-patel.jpg',
+    bio: 'Senior researcher at Google DeepMind working on understanding and improving the capabilities of language models, with a focus on safety. Her work combines NLP and reinforcement learning with linguistics, philosophy, and cognitive science. PhD from Brown University.',
+  },
+  {
     name: 'Max Lamparth',
     affiliation: 'Stanford University',
     photo: '/images/people/max-lamparth.webp',
@@ -103,12 +109,6 @@ export const organizers: Person[] = [
     affiliation: 'Meta Superintelligence Lab',
     photo: '/images/people/arun-rao.jpg',
     bio: 'Builds advanced agent systems at Meta and set up the evaluations organization in what is now the Meta Superintelligence Lab. Adjunct professor at UCLA Anderson; previously product leadership at Meta and Amazon and co-founder & CEO of Starbutter AI.',
-  },
-  {
-    name: 'Roma Patel',
-    affiliation: 'Google DeepMind',
-    photo: '/images/people/roma-patel.jpg',
-    bio: 'Senior researcher at Google DeepMind working on understanding and improving the capabilities of language models, with a focus on safety. Her work combines NLP and reinforcement learning with linguistics, philosophy, and cognitive science. PhD from Brown University.',
   },
   {
     name: 'Matija Franklin',
