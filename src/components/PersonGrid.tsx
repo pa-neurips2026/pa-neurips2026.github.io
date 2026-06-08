@@ -1,23 +1,11 @@
 import Avatar from './Avatar';
 import type { Person } from '@/lib/data';
+import { badgeFor, badgeToneClass } from '@/lib/badge';
 
 interface PersonGridProps {
   people: Person[];
   /** Avatar diameter in px. */
   size?: number;
-}
-
-// Picks the badge to show beneath a person: a discipline (panelists) takes
-// precedence, otherwise the confirmation status (speakers).
-function badgeFor(
-  person: Person,
-): { label: string; tone: 'primary' | 'neutral' } | null {
-  if (person.role) return { label: person.role, tone: 'primary' };
-  if (person.confirmed === true)
-    return { label: person.status ?? 'Confirmed', tone: 'primary' };
-  if (person.confirmed === false)
-    return { label: person.status ?? 'Tentative', tone: 'neutral' };
-  return null;
 }
 
 export default function PersonGrid({ people, size = 80 }: PersonGridProps) {
@@ -44,11 +32,7 @@ export default function PersonGrid({ people, size = 80 }: PersonGridProps) {
             </p>
             {badge && (
               <span
-                className={`font-ui text-[0.625rem] font-semibold uppercase tracking-wide px-2 py-0.5 leading-none mt-2 ${
-                  badge.tone === 'primary'
-                    ? 'bg-primary-100 text-primary-700'
-                    : 'bg-neutral-100 text-neutral-500'
-                }`}
+                className={`font-ui text-[0.625rem] font-semibold uppercase tracking-wide px-2 py-0.5 leading-none mt-2 ${badgeToneClass[badge.tone]}`}
               >
                 {badge.label}
               </span>
