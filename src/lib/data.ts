@@ -42,46 +42,64 @@ export interface Person {
   role?: string;
   bio?: string;
   confirmed?: boolean;
+  status?: string;
   photo?: string;
 }
 
-// Invited speakers — all invitations are currently tentative.
+// Invited speakers — four keynotes. `status` reflects the confirmation state
+// in the proposal: "Confirmed" or "Pending location".
 export const keynoteSpeakers: Person[] = [
-  {
-    name: 'Yejin Choi',
-    affiliation: 'University of Washington (Allen School)',
-    confirmed: false,
-    photo: '/images/people/yejin-choi.jpg',
-  },
-  {
-    name: 'Sam Bowman',
-    affiliation: 'Anthropic (on leave from NYU)',
-    confirmed: false,
-    photo: '/images/people/sam-bowman.jpg',
-  },
   {
     name: 'Noah D. Goodman',
     affiliation: 'Stanford University (Psychology & CS)',
     confirmed: false,
+    status: 'Pending location',
     photo: '/images/people/noah-goodman.jpg',
   },
   {
-    name: 'Sydney Levine',
-    affiliation: 'NYU & Google DeepMind',
-    confirmed: false,
-    photo: '/images/people/sydney-levine.jpg',
+    name: 'Jonathan Stray',
+    affiliation: 'UC Berkeley (Center for Human-Compatible AI)',
+    confirmed: true,
+    status: 'Confirmed',
   },
   {
     name: 'Boaz Barak',
     affiliation: 'Harvard University & OpenAI',
     confirmed: false,
+    status: 'Pending location',
     photo: '/images/people/boaz-barak.jpg',
   },
   {
     name: 'Maarten Sap',
     affiliation: 'Carnegie Mellon University (LTI)',
-    confirmed: false,
+    confirmed: true,
+    status: 'Confirmed',
     photo: '/images/people/maarten-sap.jpg',
+  },
+];
+
+// Invited panelists — one per discipline; `role` holds the discipline label.
+export const panelists: Person[] = [
+  {
+    name: 'Katy Milkman',
+    affiliation: 'The Wharton School',
+    role: 'Economics',
+  },
+  {
+    name: 'Richard M. Ryan',
+    affiliation: 'Australian Catholic University',
+    role: 'Psychology',
+  },
+  {
+    name: 'Munmun De Choudhury',
+    affiliation: 'Georgia Tech',
+    role: 'Social Science',
+  },
+  {
+    name: 'Yejin Choi',
+    affiliation: 'Stanford University',
+    role: 'Computer Science',
+    photo: '/images/people/yejin-choi.jpg',
   },
 ];
 
@@ -142,32 +160,30 @@ export const schedule: ScheduleItem[] = [
   { time: '09:00 – 09:10', title: 'Opening remarks', detail: 'Organizers' },
   { time: '09:10 – 09:55', title: 'Keynote 1', tba: true },
   { time: '09:55 – 10:40', title: 'Keynote 2', tba: true },
-  { time: '10:40 – 11:10', title: 'Coffee break & poster session I' },
+  { time: '10:40 – 11:10', title: 'Coffee break & poster session' },
+  { time: '11:10 – 11:55', title: 'Spotlight talks', detail: '3 × 15 min' },
+  { time: '11:55 – 12:55', title: 'Lunch' },
+  { time: '12:55 – 13:40', title: 'Keynote 3', tba: true },
+  { time: '13:40 – 14:25', title: 'Keynote 4', tba: true },
+  { time: '14:25 – 15:10', title: 'Spotlight talks', detail: '3 × 15 min' },
+  { time: '15:10 – 15:30', title: 'Coffee break' },
   {
-    time: '11:10 – 12:10',
-    title: 'Contributed & spotlight talks',
-    detail: '4 × 15 min',
-  },
-  { time: '12:10 – 13:10', title: 'Lunch' },
-  { time: '13:10 – 13:55', title: 'Keynote 3', tba: true },
-  {
-    time: '13:55 – 14:40',
-    title: 'Contributed & spotlight talks',
-    detail: '3 × 15 min',
-  },
-  { time: '14:40 – 15:10', title: 'Coffee break & poster session II' },
-  {
-    time: '15:10 – 16:00',
+    time: '15:30 – 16:20',
     title: 'Panel discussion',
     detail: 'Organizer-moderated',
   },
   {
-    time: '16:00 – 16:50',
-    title: 'Open-problems & community working session',
+    time: '16:20 – 16:50',
+    title: 'Community working session',
     detail:
       'Structured discussion on operationalizing flourishing across cultures, preventing benchmark overfitting, and training models that support autonomy rather than dependency',
   },
-  { time: '16:50 – 17:00', title: 'Closing remarks', detail: 'Organizers' },
+  {
+    time: '16:50 – 17:00',
+    title: 'Closing remarks & awards',
+    detail: 'Organizers',
+  },
+  { time: '17:00 – 18:00', title: 'Poster session' },
 ];
 
 export const cfp = {

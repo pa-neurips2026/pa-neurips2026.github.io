@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { schedule } from '@/lib/data';
+import PersonGrid from '@/components/PersonGrid';
+import { schedule, keynoteSpeakers, panelists } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Schedule',
@@ -51,11 +52,19 @@ export default function SchedulePage() {
         <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wide mb-6">
           Invited Speakers
         </h2>
-        <div className="bg-neutral-100 p-8 text-center">
-          <p className="text-sm text-neutral-500">
-            Invited speakers will be announced soon.
-          </p>
-        </div>
+        <PersonGrid people={keynoteSpeakers} size={88} />
+      </section>
+
+      {/* Invited Panelists */}
+      <section className="mb-16">
+        <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wide mb-6">
+          Invited Panelists
+        </h2>
+        <PersonGrid people={panelists} size={88} />
+        <p className="text-xs font-ui text-neutral-400 mt-6">
+          A cross-disciplinary panel spanning economics, psychology, social
+          science, and computer science.
+        </p>
       </section>
 
       {/* Accepted Papers */}

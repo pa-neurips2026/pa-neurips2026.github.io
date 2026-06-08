@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Avatar from '@/components/Avatar';
+import PersonGrid from '@/components/PersonGrid';
 import {
   workshop,
   organizers,
+  keynoteSpeakers,
 } from '@/lib/data';
 
 export default function HomePage() {
@@ -81,11 +83,7 @@ export default function HomePage() {
             Full schedule →
           </Link>
         </div>
-        <div className="bg-neutral-100 p-8 text-center">
-          <p className="text-sm text-neutral-500">
-            Invited speakers will be announced soon.
-          </p>
-        </div>
+        <PersonGrid people={keynoteSpeakers} size={72} />
       </section>
 
       {/* Organizers teaser */}
