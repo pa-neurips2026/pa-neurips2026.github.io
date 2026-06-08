@@ -15,7 +15,7 @@ export const workshop = {
     'A NeurIPS workshop on positive alignment — evaluating and building language models that help people through life’s hardest moments, support long-term goals, and strengthen rather than erode human agency.',
   openReviewUrl: '#', // Not live yet.
   abstract: [
-    'Language model alignment has focused largely on safety, teaching models to avoid harmful outputs. Positive alignment asks a complementary question: can models genuinely help when people face their most consequential moments (navigating conflict, processing grief, making major decisions), pursue long-term goals, and do so while retaining their own agency and judgment? Today’s models often fall short, retreating into refusals or platitudes, optimizing for a single helpful-sounding turn, and fostering dependence rather than strengthening users’ own judgment. The field lacks shared language and evaluation methods for this work. This workshop brings together researchers across AI alignment and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and HCI) to build a foundation for evaluating and building models that help humans flourish.',
+    'Language model alignment has focused largely on safety, teaching models to avoid harmful outputs. Positive alignment asks a complementary question: can models genuinely help when people face their most consequential moments (navigating conflict, processing grief, making major decisions), pursue long-term goals, and do so while retaining their own agency and judgment? Today’s models often fall short, retreating into refusals or platitudes, optimizing for a single helpful-sounding turn, and fostering dependence rather than strengthening users’ own judgment. These questions also extend beyond any single human-AI exchange: as models increasingly mediate how people relate, work, and decide together, positive alignment concerns their effects on communities, institutions, and society as well. The field lacks shared language and evaluation methods for this work. This workshop brings together researchers across AI alignment and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and HCI) to build a foundation for evaluating and building models that help humans flourish.',
   ],
   pillars: [
     {
@@ -59,6 +59,7 @@ export const keynoteSpeakers: Person[] = [
   {
     name: 'Jonathan Stray',
     affiliation: 'UC Berkeley (Center for Human-Compatible AI)',
+    photo: '/images/people/jonathan-stray.jpg',
     confirmed: true,
     status: 'Confirmed',
   },
@@ -83,18 +84,21 @@ export const panelists: Person[] = [
   {
     name: 'Katy Milkman',
     affiliation: 'The Wharton School',
+    photo: '/images/people/katy-milkman.jpg',
     confirmed: false,
     status: 'Tentative',
   },
   {
     name: 'Richard M. Ryan',
     affiliation: 'Australian Catholic University',
+    photo: '/images/people/richard-ryan.jpg',
     confirmed: false,
     status: 'Tentative',
   },
   {
     name: 'Munmun De Choudhury',
     affiliation: 'Georgia Tech',
+    photo: '/images/people/munmun-de-choudhury.jpg',
     confirmed: false,
     status: 'Tentative',
   },
@@ -151,6 +155,7 @@ export const programCommittee = {
   description:
     'We are assembling a Program Committee spanning machine learning and adjacent fields (including positive psychology, social work, philosophy of wellbeing, and human–computer interaction) to review submissions through an anonymized, double-blind process.',
   note: 'The named Program Committee will be listed here once invitations are confirmed.',
+  nominateUrl: 'https://forms.gle/x1S8YtJ7r64kfwFf8',
 };
 
 export interface ScheduleItem {
@@ -161,7 +166,7 @@ export interface ScheduleItem {
 }
 
 export const schedule: ScheduleItem[] = [
-  { time: '09:00 – 09:10', title: 'Opening remarks', detail: 'Organizers' },
+  { time: '09:00 – 09:10', title: 'Opening remarks' },
   { time: '09:10 – 09:55', title: 'Keynote 1', tba: true },
   { time: '09:55 – 10:40', title: 'Keynote 2', tba: true },
   { time: '10:40 – 11:10', title: 'Coffee break & poster session' },

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import PersonGrid from '@/components/PersonGrid';
+import PersonCard from '@/components/PersonCard';
 import { schedule, keynoteSpeakers, panelists } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -52,7 +52,11 @@ export default function SchedulePage() {
         <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wide mb-6">
           Invited Speakers
         </h2>
-        <PersonGrid people={keynoteSpeakers} size={88} />
+        <div className="grid grid-cols-1 gap-4">
+          {keynoteSpeakers.map((speaker) => (
+            <PersonCard key={speaker.name} person={speaker} />
+          ))}
+        </div>
       </section>
 
       {/* Invited Panelists */}
@@ -60,7 +64,11 @@ export default function SchedulePage() {
         <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wide mb-6">
           Invited Panelists
         </h2>
-        <PersonGrid people={panelists} size={88} />
+        <div className="grid grid-cols-1 gap-4">
+          {panelists.map((panelist) => (
+            <PersonCard key={panelist.name} person={panelist} />
+          ))}
+        </div>
         <p className="text-xs font-ui text-neutral-400 mt-6">
           A cross-disciplinary panel spanning economics, psychology, social
           science, and computer science.
