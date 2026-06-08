@@ -158,6 +158,43 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Awards */}
+      <section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Best Paper Award */}
+          <div className="bg-neutral-100 border border-transparent p-6 flex flex-col">
+            <div className="flex items-center gap-2 mb-2">
+              <svg className="w-5 h-5 text-swiss-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L23 12l-5.714 2.143L15 21l-2.286-6.857L7 12l5.714-2.143L15 3z" />
+              </svg>
+              <h3 className="text-base font-bold text-neutral-900">
+                Best Paper Award
+              </h3>
+            </div>
+            <p className="text-sm text-neutral-600 leading-relaxed flex-1">
+              Recognizing an outstanding accepted submission, selected by the
+              Program Committee. Details to follow.
+            </p>
+          </div>
+
+          {/* Student Travel Award */}
+          <div className="bg-neutral-100 border border-transparent p-6 flex flex-col">
+            <div className="flex items-center gap-2 mb-2">
+              <svg className="w-5 h-5 text-swiss-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+              <h3 className="text-base font-bold text-neutral-900">
+                Student Travel Award
+              </h3>
+            </div>
+            <p className="text-sm text-neutral-600 leading-relaxed flex-1">
+              Travel support to help students attend and present at the
+              workshop. Details to follow.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
