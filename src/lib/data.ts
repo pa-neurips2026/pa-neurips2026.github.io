@@ -59,6 +59,7 @@ export const keynoteSpeakers: Person[] = [
   {
     name: 'Jonathan Stray',
     affiliation: 'UC Berkeley (Center for Human-Compatible AI)',
+    photo: '/images/people/jonathan-stray.jpg',
     confirmed: true,
     status: 'Confirmed',
   },
@@ -83,18 +84,21 @@ export const panelists: Person[] = [
   {
     name: 'Katy Milkman',
     affiliation: 'The Wharton School',
+    photo: '/images/people/katy-milkman.jpg',
     confirmed: false,
     status: 'Tentative',
   },
   {
     name: 'Richard M. Ryan',
     affiliation: 'Australian Catholic University',
+    photo: '/images/people/richard-ryan.jpg',
     confirmed: false,
     status: 'Tentative',
   },
   {
     name: 'Munmun De Choudhury',
     affiliation: 'Georgia Tech',
+    photo: '/images/people/munmun-de-choudhury.jpg',
     confirmed: false,
     status: 'Tentative',
   },
