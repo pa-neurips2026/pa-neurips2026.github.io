@@ -78,27 +78,31 @@ export const keynoteSpeakers: Person[] = [
   },
 ];
 
-// Invited panelists — one per discipline; `role` holds the discipline label.
+// Invited panelists — invitations pending, so all shown as tentative.
 export const panelists: Person[] = [
   {
     name: 'Katy Milkman',
     affiliation: 'The Wharton School',
-    role: 'Economics',
+    confirmed: false,
+    status: 'Tentative',
   },
   {
     name: 'Richard M. Ryan',
     affiliation: 'Australian Catholic University',
-    role: 'Psychology',
+    confirmed: false,
+    status: 'Tentative',
   },
   {
     name: 'Munmun De Choudhury',
     affiliation: 'Georgia Tech',
-    role: 'Social Science',
+    confirmed: false,
+    status: 'Tentative',
   },
   {
     name: 'Yejin Choi',
     affiliation: 'Stanford University',
-    role: 'Computer Science',
+    confirmed: false,
+    status: 'Tentative',
     photo: '/images/people/yejin-choi.jpg',
   },
 ];
