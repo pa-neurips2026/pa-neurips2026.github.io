@@ -161,7 +161,7 @@ export interface ScheduleItem {
 }
 
 export const schedule: ScheduleItem[] = [
-  { time: '09:00 – 09:10', title: 'Opening remarks', detail: 'Organizers' },
+  { time: '09:00 – 09:10', title: 'Opening remarks' },
   { time: '09:10 – 09:55', title: 'Keynote 1', tba: true },
   { time: '09:55 – 10:40', title: 'Keynote 2', tba: true },
   { time: '10:40 – 11:10', title: 'Coffee break & poster session' },
