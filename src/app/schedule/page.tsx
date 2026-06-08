@@ -42,9 +42,6 @@ export default function SchedulePage() {
             </div>
           ))}
         </div>
-        <p className="text-xs font-ui text-neutral-400 mt-3">
-          Schedule is tentative and subject to change.
-        </p>
       </section>
 
       {/* Invited Speakers */}
@@ -69,10 +66,6 @@ export default function SchedulePage() {
             <PersonCard key={panelist.name} person={panelist} />
           ))}
         </div>
-        <p className="text-xs font-ui text-neutral-400 mt-6">
-          A cross-disciplinary panel spanning economics, psychology, social
-          science, and computer science.
-        </p>
       </section>
 
       {/* Accepted Papers */}
